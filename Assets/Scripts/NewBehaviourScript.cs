@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class NewBehaviourScript : MonoBehaviour
 {
@@ -20,5 +21,6 @@ public class NewBehaviourScript : MonoBehaviour
     {
         Destroy(menu.gameObject);
         Debug.Log("Cаси");
+        SceneManager.LoadScene("Work");
     }
 }
