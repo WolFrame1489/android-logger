@@ -23,13 +23,13 @@ public class graphscript : MonoBehaviour
     {
         i+= 0.5f;
         res = Input.gyro.attitude.eulerAngles.x;
-        resvec = new Vector3(i, (res + 200), 1);
+        resvec = new Vector3(i, (res + 50), 1);
         Instantiate(xtochka, resvec, Quaternion.identity);
         res = Input.gyro.attitude.eulerAngles.y;
-        resvec = new Vector3(i, (res + 200), 1);
+        resvec = new Vector3(i, (res + 50), 1);
         Instantiate(ytochka, resvec, Quaternion.identity);
         res = Input.gyro.attitude.eulerAngles.z;
-        resvec = new Vector3(i, (res + 200), 1);
+        resvec = new Vector3(i, (res + 50), 1);
         Instantiate(ztochka, resvec, Quaternion.identity);
 
     }
