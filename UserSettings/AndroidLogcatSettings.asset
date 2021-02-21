@@ -1,9 +1,9 @@
 {
-    "m_SelectedDeviceId": "22540fd8a70d7ece",
+    "m_SelectedDeviceId": "R58M75F5MKA",
     "m_SelectedPackage": {
-        "deviceId": "22540fd8a70d7ece",
+        "deviceId": "R58M75F5MKA",
         "name": "com.DefaultCompany.com.unity.template.mobile2D",
-        "processId": 10518,
+        "processId": 24060,
         "exited": false
     },
     "m_SelectedPriority": 0,
@@ -60,6 +60,60 @@
             "deviceId": "22540fd8a70d7ece",
             "name": "com.DefaultCompany.com.unity.template.mobile2D",
             "processId": 10518,
+            "exited": false
+        },
+        {
+            "deviceId": "R58M75F5MKA",
+            "name": "com.DefaultCompany.com.unity.template.mobile2D",
+            "processId": 22220,
+            "exited": true
+        },
+        {
+            "deviceId": "R58M75F5MKA",
+            "name": "com.DefaultCompany.com.unity.template.mobile2D",
+            "processId": 14562,
+            "exited": true
+        },
+        {
+            "deviceId": "R58M75F5MKA",
+            "name": "com.android.settings",
+            "processId": 13456,
+            "exited": false
+        },
+        {
+            "deviceId": "R58M75F5MKA",
+            "name": "com.DefaultCompany.com.unity.template.mobile2D",
+            "processId": 24009,
+            "exited": false
+        },
+        {
+            "deviceId": "R58M75F5MKA",
+            "name": "com.DefaultCompany.com.unity.template.mobile2D",
+            "processId": 29720,
+            "exited": false
+        },
+        {
+            "deviceId": "R58M75F5MKA",
+            "name": "com.DefaultCompany.com.unity.template.mobile2D",
+            "processId": 381,
+            "exited": false
+        },
+        {
+            "deviceId": "R58M75F5MKA",
+            "name": "com.DefaultCompany.com.unity.template.mobile2D",
+            "processId": 2810,
+            "exited": false
+        },
+        {
+            "deviceId": "R58M75F5MKA",
+            "name": "com.DefaultCompany.com.unity.template.mobile2D",
+            "processId": 16048,
+            "exited": false
+        },
+        {
+            "deviceId": "R58M75F5MKA",
+            "name": "com.DefaultCompany.com.unity.template.mobile2D",
+            "processId": 24060,
             "exited": false
         }
     ],

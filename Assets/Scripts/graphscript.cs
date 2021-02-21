@@ -12,6 +12,8 @@ public class graphscript : MonoBehaviour
     public Vector3 resvec;
     public float i = 50f;
     public float res = 0;
+    public float timer = 30;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -21,25 +23,31 @@ public class graphscript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        i+= 0.5f;
-        res = Input.gyro.attitude.eulerAngles.x;
-        resvec = new Vector3(i, (res + 200), 1);
-        Instantiate(xtochka, resvec, Quaternion.identity);
-        res = Input.gyro.attitude.eulerAngles.y;
-        resvec = new Vector3(i, (res + 200), 1);
-        Instantiate(ytochka, resvec, Quaternion.identity);
-        res = Input.gyro.attitude.eulerAngles.z;
-        resvec = new Vector3(i, (res + 200), 1);
-        Instantiate(ztochka, resvec, Quaternion.identity);
-
+        if (timer >= 0f) 
+        {
+            i += 0.5f;
+            res = Input.gyro.attitude.eulerAngles.x;
+            resvec = new Vector3(i, (res + 50), 1);
+            Instantiate(xtochka, resvec, Quaternion.identity);
+            res = Input.gyro.attitude.eulerAngles.y;
+            resvec = new Vector3(i, (res + 50), 1);
+            Instantiate(ytochka, resvec, Quaternion.identity);
+            res = Input.gyro.attitude.eulerAngles.z;
+            resvec = new Vector3(i, (res + 50), 1);
+            Instantiate(ztochka, resvec, Quaternion.identity);
+            timer -= Time.deltaTime;
+        }
     }
     protected void OnGUI()
     {
         GUI.skin.label.fontSize = Screen.width / 40;
-
-        GUILayout.Label("Orientation: " + Screen.orientation);
-        GUILayout.Label("input.gyro.attitude: " + Input.gyro.attitude.eulerAngles.x);
-        GUILayout.Label("input.gyro.attitude: " + Input.gyro.attitude.eulerAngles.y);
-        GUILayout.Label("input.gyro.attitude: " + Input.gyro.attitude.eulerAngles.z);
+        if (timer >= 0f)
+        {
+            GUILayout.Label("Orientation: " + Screen.orientation);
+            GUILayout.Label("input.gyro.attitude: " + Input.gyro.attitude.eulerAngles.x);
+            GUILayout.Label("input.gyro.attitude: " + Input.gyro.attitude.eulerAngles.y);
+            GUILayout.Label("input.gyro.attitude: " + Input.gyro.attitude.eulerAngles.z);
+            GUILayout.Label("timer: " + ((float)System.Math.Round(timer, 3)));
+        }
     }
     }
