@@ -17,6 +17,7 @@ public class acelsript : MonoBehaviour
     public GameObject Button2;
     public GameObject Text2;
     public Vector3 resvec;
+    public int k = 0;
     public float i = 150f;
     public float res = 0;
     public float timer = 30;
@@ -56,27 +57,11 @@ public class acelsript : MonoBehaviour
         }
         else
         {
-            string[][] output = new string[rowData.Count][];
-
-            for (int i = 0; i < output.Length; i++)
+            k++;
+            if (k == 1)
             {
-                output[i] = rowData[i];
+                save();
             }
-
-            int length = output.GetLength(0);
-            string delimiter = ",";
-
-            StringBuilder sb = new StringBuilder();
-
-            for (int index = 0; index < length; index++)
-                sb.AppendLine(string.Join(delimiter, output[index]));
-
-
-            string filePath = getPath();
-
-            StreamWriter outStream = System.IO.File.CreateText(filePath);
-            outStream.WriteLine(sb);
-            outStream.Close();
             Button2.SetActive(true);
             Text2.SetActive(true);
         }
@@ -99,5 +84,29 @@ public class acelsript : MonoBehaviour
     private string getPath()
     {
         return Application.persistentDataPath + "acel_data.csv";
+    }
+    public void save()
+    {
+        string[][] output = new string[rowData.Count][];
+
+        for (int i = 0; i < output.Length; i++)
+        {
+            output[i] = rowData[i];
+        }
+
+        int length = output.GetLength(0);
+        string delimiter = ";";
+
+        StringBuilder sb = new StringBuilder();
+
+        for (int index = 0; index < length; index++)
+            sb.AppendLine(string.Join(delimiter, output[index]));
+
+
+        string filePath = getPath();
+
+        StreamWriter outStream = System.IO.File.CreateText(filePath);
+        outStream.WriteLine(sb);
+        outStream.Close();
     }
 }
