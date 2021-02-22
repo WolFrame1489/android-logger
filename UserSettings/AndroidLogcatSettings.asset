@@ -3,35 +3,11 @@
     "m_SelectedPackage": {
         "deviceId": "22540fd8a70d7ece",
         "name": "com.DefaultCompany.com.unity.template.mobile2D",
-        "processId": 30053,
+        "processId": 29124,
         "exited": false
     },
     "m_SelectedPriority": 0,
     "m_KnownPackagesForSerialization": [
-        {
-            "deviceId": "22540fd8a70d7ece",
-            "name": "com.DefaultCompany.com.unity.template.mobile2D",
-            "processId": 8480,
-            "exited": true
-        },
-        {
-            "deviceId": "22540fd8a70d7ece",
-            "name": "com.DefaultCompany.com.unity.template.mobile2D",
-            "processId": 10518,
-            "exited": true
-        },
-        {
-            "deviceId": "22540fd8a70d7ece",
-            "name": "com.DefaultCompany.com.unity.template.mobile2D",
-            "processId": 11797,
-            "exited": true
-        },
-        {
-            "deviceId": "22540fd8a70d7ece",
-            "name": "com.DefaultCompany.com.unity.template.mobile2D",
-            "processId": 18164,
-            "exited": true
-        },
         {
             "deviceId": "22540fd8a70d7ece",
             "name": "com.DefaultCompany.com.unity.template.mobile2D",
@@ -42,12 +18,132 @@
             "deviceId": "22540fd8a70d7ece",
             "name": "com.vkontakte.android",
             "processId": 32043,
-            "exited": false
+            "exited": true
         },
         {
             "deviceId": "22540fd8a70d7ece",
             "name": "com.DefaultCompany.com.unity.template.mobile2D",
             "processId": 30053,
+            "exited": true
+        },
+        {
+            "deviceId": "22540fd8a70d7ece",
+            "name": "com.DefaultCompany.com.unity.template.mobile2D",
+            "processId": 6406,
+            "exited": true
+        },
+        {
+            "deviceId": "22540fd8a70d7ece",
+            "name": "com.DefaultCompany.com.unity.template.mobile2D",
+            "processId": 8841,
+            "exited": true
+        },
+        {
+            "deviceId": "22540fd8a70d7ece",
+            "name": "com.sec.android.app.launcher",
+            "processId": 1906,
+            "exited": false
+        },
+        {
+            "deviceId": "22540fd8a70d7ece",
+            "name": "com.DefaultCompany.com.unity.template.mobile2D",
+            "processId": 20997,
+            "exited": false
+        },
+        {
+            "deviceId": "22540fd8a70d7ece",
+            "name": "com.DefaultCompany.com.unity.template.mobile2D",
+            "processId": 17465,
+            "exited": false
+        },
+        {
+            "deviceId": "22540fd8a70d7ece",
+            "name": "com.DefaultCompany.com.unity.template.mobile2D",
+            "processId": 21050,
+            "exited": false
+        },
+        {
+            "deviceId": "22540fd8a70d7ece",
+            "name": "com.DefaultCompany.com.unity.template.mobile2D",
+            "processId": 23458,
+            "exited": false
+        },
+        {
+            "deviceId": "22540fd8a70d7ece",
+            "name": "com.DefaultCompany.com.unity.template.mobile2D",
+            "processId": 24441,
+            "exited": false
+        },
+        {
+            "deviceId": "22540fd8a70d7ece",
+            "name": "com.DefaultCompany.com.unity.template.mobile2D",
+            "processId": 25228,
+            "exited": false
+        },
+        {
+            "deviceId": "22540fd8a70d7ece",
+            "name": "com.DefaultCompany.com.unity.template.mobile2D",
+            "processId": 27249,
+            "exited": false
+        },
+        {
+            "deviceId": "22540fd8a70d7ece",
+            "name": "com.DefaultCompany.com.unity.template.mobile2D",
+            "processId": 29546,
+            "exited": false
+        },
+        {
+            "deviceId": "22540fd8a70d7ece",
+            "name": "com.DefaultCompany.com.unity.template.mobile2D",
+            "processId": 31183,
+            "exited": false
+        },
+        {
+            "deviceId": "22540fd8a70d7ece",
+            "name": "com.DefaultCompany.com.unity.template.mobile2D",
+            "processId": 825,
+            "exited": false
+        },
+        {
+            "deviceId": "22540fd8a70d7ece",
+            "name": "com.DefaultCompany.com.unity.template.mobile2D",
+            "processId": 2830,
+            "exited": false
+        },
+        {
+            "deviceId": "22540fd8a70d7ece",
+            "name": "com.DefaultCompany.com.unity.template.mobile2D",
+            "processId": 4918,
+            "exited": false
+        },
+        {
+            "deviceId": "22540fd8a70d7ece",
+            "name": "com.DefaultCompany.com.unity.template.mobile2D",
+            "processId": 6829,
+            "exited": false
+        },
+        {
+            "deviceId": "22540fd8a70d7ece",
+            "name": "com.DefaultCompany.com.unity.template.mobile2D",
+            "processId": 7974,
+            "exited": false
+        },
+        {
+            "deviceId": "22540fd8a70d7ece",
+            "name": "com.DefaultCompany.com.unity.template.mobile2D",
+            "processId": 8495,
+            "exited": false
+        },
+        {
+            "deviceId": "22540fd8a70d7ece",
+            "name": "com.DefaultCompany.com.unity.template.mobile2D",
+            "processId": 16305,
+            "exited": false
+        },
+        {
+            "deviceId": "22540fd8a70d7ece",
+            "name": "com.DefaultCompany.com.unity.template.mobile2D",
+            "processId": 29124,
             "exited": false
         }
     ],

@@ -3,9 +3,14 @@ using System.Collections.Generic;
 using UnityEngine;
 using static System.Math;
 using UnityEngine.SceneManagement;
+using System.Text;
+using System.IO;
+using System;
 
 public class acelsript : MonoBehaviour
 {
+    private List<string[]> rowData = new List<string[]>();
+    string[] rowDataTemp = new string[3];
     public Transform xtochka;
     public Transform ytochka;
     public Transform ztochka;
@@ -19,6 +24,10 @@ public class acelsript : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        rowDataTemp[0] = "X";
+        rowDataTemp[1] = "Y";
+        rowDataTemp[2] = "Z";
+        rowData.Add(rowDataTemp);
         Button2.SetActive(false);
         Text2.SetActive(false);
         Input.gyro.enabled = true;
@@ -31,18 +40,43 @@ public class acelsript : MonoBehaviour
         {
             i += 0.5f;
             res = Input.acceleration.x;
+            rowDataTemp[0] = "" + res;
             resvec = new Vector3(i, (res*10)+250, 1);
             Instantiate(xtochka, resvec, Quaternion.identity);
             res = Input.acceleration.y;
+            rowDataTemp[1] = "" + res;
             resvec = new Vector3(i, (res*10)+200, 1);
             Instantiate(ytochka, resvec, Quaternion.identity);
             res = Input.acceleration.z;
+            rowDataTemp[2] = "" + res;
             resvec = new Vector3(i, (res*10)+150, 1);
             Instantiate(ztochka, resvec, Quaternion.identity);
             timer -= Time.deltaTime;
+            rowData.Add(rowDataTemp);
         }
         else
         {
+            string[][] output = new string[rowData.Count][];
+
+            for (int i = 0; i < output.Length; i++)
+            {
+                output[i] = rowData[i];
+            }
+
+            int length = output.GetLength(0);
+            string delimiter = ",";
+
+            StringBuilder sb = new StringBuilder();
+
+            for (int index = 0; index < length; index++)
+                sb.AppendLine(string.Join(delimiter, output[index]));
+
+
+            string filePath = getPath();
+
+            StreamWriter outStream = System.IO.File.CreateText(filePath);
+            outStream.WriteLine(sb);
+            outStream.Close();
             Button2.SetActive(true);
             Text2.SetActive(true);
         }
@@ -61,5 +95,9 @@ public class acelsript : MonoBehaviour
     public void onclick()
     {
         SceneManager.LoadScene("Menu");
+    }
+    private string getPath()
+    {
+        return Application.persistentDataPath + "acel_data.csv";
     }
 }
