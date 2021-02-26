@@ -3,7 +3,7 @@
     "m_SelectedPackage": {
         "deviceId": "R58M75F5MKA",
         "name": "com.DefaultCompany.com.unity.template.mobile2D",
-        "processId": 24060,
+        "processId": 30535,
         "exited": false
     },
     "m_SelectedPriority": 0,
@@ -114,6 +114,24 @@
             "deviceId": "R58M75F5MKA",
             "name": "com.DefaultCompany.com.unity.template.mobile2D",
             "processId": 24060,
+            "exited": false
+        },
+        {
+            "deviceId": "R58M75F5MKA",
+            "name": "com.DefaultCompany.com.unity.template.mobile2D",
+            "processId": 27859,
+            "exited": false
+        },
+        {
+            "deviceId": "R58M75F5MKA",
+            "name": "com.DefaultCompany.com.unity.template.mobile2D",
+            "processId": 29392,
+            "exited": false
+        },
+        {
+            "deviceId": "R58M75F5MKA",
+            "name": "com.DefaultCompany.com.unity.template.mobile2D",
+            "processId": 30535,
             "exited": false
         }
     ],
