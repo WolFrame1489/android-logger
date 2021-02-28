@@ -3,7 +3,7 @@
     "m_SelectedPackage": {
         "deviceId": "22540fd8a70d7ece",
         "name": "com.logger.brigada7",
-        "processId": 5843,
+        "processId": 21034,
         "exited": false
     },
     "m_SelectedPriority": 0,
@@ -150,6 +150,24 @@
             "deviceId": "22540fd8a70d7ece",
             "name": "com.logger.brigada7",
             "processId": 5843,
+            "exited": false
+        },
+        {
+            "deviceId": "22540fd8a70d7ece",
+            "name": "com.logger.brigada7",
+            "processId": 6865,
+            "exited": false
+        },
+        {
+            "deviceId": "22540fd8a70d7ece",
+            "name": "com.logger.brigada7",
+            "processId": 30749,
+            "exited": false
+        },
+        {
+            "deviceId": "22540fd8a70d7ece",
+            "name": "com.logger.brigada7",
+            "processId": 21034,
             "exited": false
         }
     ],
