@@ -41,6 +41,7 @@ public class acelsript : MonoBehaviour
         if (timer >= 0f)
         {
             i += 0.5f;
+            rowDataTemp = new string[4];
             res = Input.acceleration.x;
             rowDataTemp[0] = "" + res;
             resvec = new Vector3(i, (res*10)+250, 1);
