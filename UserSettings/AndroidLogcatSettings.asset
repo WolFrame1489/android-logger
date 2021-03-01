@@ -2,8 +2,8 @@
     "m_SelectedDeviceId": "R58M75F5MKA",
     "m_SelectedPackage": {
         "deviceId": "R58M75F5MKA",
-        "name": "com.DefaultCompany.com.unity.template.mobile2D",
-        "processId": 30535,
+        "name": "com.logger.brigada7",
+        "processId": 632,
         "exited": false
     },
     "m_SelectedPriority": 0,
@@ -132,6 +132,78 @@
             "deviceId": "R58M75F5MKA",
             "name": "com.DefaultCompany.com.unity.template.mobile2D",
             "processId": 30535,
+            "exited": false
+        },
+        {
+            "deviceId": "R58M75F5MKA",
+            "name": "com.logger.brigada7",
+            "processId": 12711,
+            "exited": false
+        },
+        {
+            "deviceId": "R58M75F5MKA",
+            "name": "com.logger.brigada7",
+            "processId": 15681,
+            "exited": false
+        },
+        {
+            "deviceId": "R58M75F5MKA",
+            "name": "com.logger.brigada7",
+            "processId": 17939,
+            "exited": false
+        },
+        {
+            "deviceId": "R58M75F5MKA",
+            "name": "com.logger.brigada7",
+            "processId": 19772,
+            "exited": false
+        },
+        {
+            "deviceId": "R58M75F5MKA",
+            "name": "com.logger.brigada7",
+            "processId": 25342,
+            "exited": false
+        },
+        {
+            "deviceId": "R58M75F5MKA",
+            "name": "com.logger.brigada7",
+            "processId": 27150,
+            "exited": false
+        },
+        {
+            "deviceId": "R58M75F5MKA",
+            "name": "com.logger.brigada7",
+            "processId": 27956,
+            "exited": false
+        },
+        {
+            "deviceId": "R58M75F5MKA",
+            "name": "com.logger.brigada7",
+            "processId": 30634,
+            "exited": false
+        },
+        {
+            "deviceId": "R58M75F5MKA",
+            "name": "com.logger.brigada7",
+            "processId": 31311,
+            "exited": false
+        },
+        {
+            "deviceId": "R58M75F5MKA",
+            "name": "com.logger.brigada7",
+            "processId": 2512,
+            "exited": false
+        },
+        {
+            "deviceId": "R58M75F5MKA",
+            "name": "com.logger.brigada7",
+            "processId": 5138,
+            "exited": false
+        },
+        {
+            "deviceId": "R58M75F5MKA",
+            "name": "com.logger.brigada7",
+            "processId": 632,
             "exited": false
         }
     ],

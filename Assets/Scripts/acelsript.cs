@@ -7,32 +7,30 @@ using System.Text;
 using System.IO;
 using System;
 
-public class graphscript : MonoBehaviour
+public class acelsript : MonoBehaviour
 {
     private List<string[]> rowData = new List<string[]>();
     string[] rowDataTemp = new string[3];
     public Transform xtochka;
     public Transform ytochka;
     public Transform ztochka;
-    public GameObject pixelholder;
-    public GameObject Button;
-    public GameObject Text1;
+    public GameObject Button2;
+    public GameObject Text2;
     public Vector3 resvec;
-    public float i = 50f;
     public int k = 0;
+    public float i = 150f;
     public float res = 0;
     public float timer = 30;
 
     // Start is called before the first frame update
     void Start()
     {
-        
         rowDataTemp[0] = "X";
         rowDataTemp[1] = "Y";
         rowDataTemp[2] = "Z";
         rowData.Add(rowDataTemp);
-        Button.SetActive(false);
-        Text1.SetActive(false);
+        Button2.SetActive(false);
+        Text2.SetActive(false);
         Input.gyro.enabled = true;
     }
 
@@ -42,18 +40,17 @@ public class graphscript : MonoBehaviour
         if (timer >= 0f)
         {
             i += 0.5f;
-            rowDataTemp = new string[3];
-            res = Input.gyro.attitude.eulerAngles.x;
+            res = Input.acceleration.x;
             rowDataTemp[0] = "" + res;
-            resvec = new Vector3(i, (res + 25), 1);
+            resvec = new Vector3(i, (res*10)+250, 1);
             Instantiate(xtochka, resvec, Quaternion.identity);
-            res = Input.gyro.attitude.eulerAngles.y;
+            res = Input.acceleration.y;
             rowDataTemp[1] = "" + res;
-            resvec = new Vector3(i, (res + 25), 1);
+            resvec = new Vector3(i, (res*10)+200, 1);
             Instantiate(ytochka, resvec, Quaternion.identity);
-            res = Input.gyro.attitude.eulerAngles.z;
+            res = Input.acceleration.z;
             rowDataTemp[2] = "" + res;
-            resvec = new Vector3(i, (res + 25), 1);
+            resvec = new Vector3(i, (res*10)+150, 1);
             Instantiate(ztochka, resvec, Quaternion.identity);
             timer -= Time.deltaTime;
             rowData.Add(rowDataTemp);
@@ -65,8 +62,8 @@ public class graphscript : MonoBehaviour
             {
                 save();
             }
-            Button.SetActive(true);
-            Text1.SetActive(true);
+            Button2.SetActive(true);
+            Text2.SetActive(true);
         }
     }
     protected void OnGUI()
@@ -74,9 +71,9 @@ public class graphscript : MonoBehaviour
         GUI.skin.label.fontSize = Screen.width / 40;
         if (timer >= 0f)
         {
-            GUILayout.Label("input.gyro.attitude: " + Input.gyro.attitude.eulerAngles.x);
-            GUILayout.Label("input.gyro.attitude: " + Input.gyro.attitude.eulerAngles.y);
-            GUILayout.Label("input.gyro.attitude: " + Input.gyro.attitude.eulerAngles.z);
+            GUILayout.Label("input.gyro.attitude: " + Input.acceleration.x);
+            GUILayout.Label("input.gyro.attitude: " + Input.acceleration.y);
+            GUILayout.Label("input.gyro.attitude: " + Input.acceleration.z);
             GUILayout.Label("timer: " + ((float)System.Math.Round(timer, 3)));
         }
     }
@@ -86,11 +83,7 @@ public class graphscript : MonoBehaviour
     }
     private string getPath()
     {
-        return Application.persistentDataPath + "gyro_data.csv";
-    }
-    private string getPathscreen()
-    {
-        return Application.persistentDataPath + "screen1488228.png";
+        return Application.persistentDataPath + "acel_data.csv";
     }
     public void save()
     {

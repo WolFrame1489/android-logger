@@ -17,10 +17,14 @@ public class NewBehaviourScript : MonoBehaviour
     {
         
     }
-    public void OnClick()
+    public void OnClick1()
     {
         Destroy(menu.gameObject);
-        Debug.Log("Cаси");
         SceneManager.LoadScene("Work");
+    }
+    public void OnClick2()
+    {
+        Destroy(menu.gameObject);
+        SceneManager.LoadScene("Work2");
     }
 }
