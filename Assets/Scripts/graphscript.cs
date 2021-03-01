@@ -10,7 +10,7 @@ using System;
 public class graphscript : MonoBehaviour
 {
     private List<string[]> rowData = new List<string[]>();
-    string[] rowDataTemp = new string[3];
+    string[] rowDataTemp = new string[4];
     public Transform xtochka;
     public Transform ytochka;
     public Transform ztochka;
@@ -30,6 +30,7 @@ public class graphscript : MonoBehaviour
         rowDataTemp[0] = "X";
         rowDataTemp[1] = "Y";
         rowDataTemp[2] = "Z";
+        rowDataTemp[3] = "T";
         rowData.Add(rowDataTemp);
         Button.SetActive(false);
         Text1.SetActive(false);
@@ -42,7 +43,7 @@ public class graphscript : MonoBehaviour
         if (timer >= 0f)
         {
             i += 0.5f;
-            rowDataTemp = new string[3];
+            rowDataTemp = new string[4];
             res = Input.gyro.attitude.eulerAngles.x;
             rowDataTemp[0] = "" + res;
             resvec = new Vector3(i, (res + 25), 1);
@@ -56,6 +57,7 @@ public class graphscript : MonoBehaviour
             resvec = new Vector3(i, (res + 25), 1);
             Instantiate(ztochka, resvec, Quaternion.identity);
             timer -= Time.deltaTime;
+            rowDataTemp[3] = "" + (30 - timer);
             rowData.Add(rowDataTemp);
         }
         else

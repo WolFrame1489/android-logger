@@ -10,7 +10,7 @@ using System;
 public class acelsript : MonoBehaviour
 {
     private List<string[]> rowData = new List<string[]>();
-    string[] rowDataTemp = new string[3];
+    string[] rowDataTemp = new string[4];
     public Transform xtochka;
     public Transform ytochka;
     public Transform ztochka;
@@ -28,6 +28,7 @@ public class acelsript : MonoBehaviour
         rowDataTemp[0] = "X";
         rowDataTemp[1] = "Y";
         rowDataTemp[2] = "Z";
+        rowDataTemp[3] = "T";
         rowData.Add(rowDataTemp);
         Button2.SetActive(false);
         Text2.SetActive(false);
@@ -40,6 +41,7 @@ public class acelsript : MonoBehaviour
         if (timer >= 0f)
         {
             i += 0.5f;
+            rowDataTemp = new string[4];
             res = Input.acceleration.x;
             rowDataTemp[0] = "" + res;
             resvec = new Vector3(i, (res*10)+250, 1);
@@ -53,6 +55,7 @@ public class acelsript : MonoBehaviour
             resvec = new Vector3(i, (res*10)+150, 1);
             Instantiate(ztochka, resvec, Quaternion.identity);
             timer -= Time.deltaTime;
+            rowDataTemp[3] = "" + (30 - timer);
             rowData.Add(rowDataTemp);
         }
         else
